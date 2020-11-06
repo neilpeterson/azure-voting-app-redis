@@ -8,9 +8,9 @@ products:
 description: "This sample creates a multi-container application in an Azure Kubernetes Service (AKS) cluster."
 ---
 
-[![Build Status](https://nepeters-devops.visualstudio.com/well-architected-pipeline-demo/_apis/build/status/neilpeterson.azure-voting-app-redis?branchName=pipelines)](https://nepeters-devops.visualstudio.com/well-architected-pipeline-demo/_build/latest?definitionId=117&branchName=pipelines)
-
 # Azure Voting App
+
+[![Build Status](https://nepeters-devops.visualstudio.com/well-architected-pipeline-demo/_apis/build/status/neilpeterson.azure-voting-app-redis?branchName=pipelines)](https://nepeters-devops.visualstudio.com/well-architected-pipeline-demo/_build/latest?definitionId=117&branchName=pipelines)
 
 This sample creates a multi-container application in an Azure Kubernetes Service (AKS) cluster. The application interface has been built using Python / Flask. The data component is using Redis.
 
