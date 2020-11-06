@@ -44,13 +44,16 @@ stages:
     - script: |
         pip3 install pytest
         pytest azure-vote/azure-vote/tests/ --junitxml=junit/test-results.xml
+      continueOnError: true
 
     - task: PublishTestResults@2
       displayName: 'Publish Test Results'
       inputs:
+        testResultsFormat: 'JUnit'
         testResultsFiles: '**/test-results.xml'
+        failTaskOnFailedTests: true
         testRunTitle: 'Python $(python.version)'
-
+        
 - stage: build
   dependsOn: test
   condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest'))
